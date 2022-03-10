@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
 .mainHeader {
   width: 100%;
+  position: relative;
+  z-index: 2;
 }
 .headerInner {
   padding: 0 1rem;
@@ -12,8 +14,21 @@
   text-decoration: none;
   color: #fff !important;
   font-size: 15px;
-  font-weight: bold;
+  font-weight: 600;
   font-family: "Source Code Pro", monospace;
+}
+.hamburgerBtn{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: none;
+}
+.hamburgerIcon{
+  font-size: 30px;
+  color:$purple;
+  &:hover{
+    color:$green !important;
+  }
 }
 .logoInner {
   @include flexcolcenter;
@@ -41,5 +56,13 @@
   transition: all 0.2s ease-in-out;
   &:hover {
     color: $green !important;
+  }
+}
+
+
+
+@media screen and (max-width:767.99px) {
+  .hamburgerBtn{
+    display: block !important;
   }
 }

@@ -1,0 +1,28 @@
+@import "../../SCSS/mixins.scss";
+@import "../../SCSS/variables.scss";
+
+.asideMenu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    .socialBar{
+        @include flexcolcenter;
+        padding: 20px;
+        height: 100%;
+    }
+}
+.socialLink{
+    display: inline-block;
+    margin: .5rem 0;
+}
+.socialIcon{
+    font-size: 50px;
+    color: #808080;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: $green !important;
+        transform: rotate(90deg) !important;
+    }
+}

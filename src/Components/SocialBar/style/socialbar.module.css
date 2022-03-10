@@ -1,0 +1,44 @@
+.asideMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+}
+
+.asideMenu .socialBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  height: 100%;
+}
+
+.socialLink {
+  display: inline-block;
+  margin: .5rem 0;
+}
+
+.socialIcon {
+  font-size: 50px;
+  color: #808080;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.socialIcon:hover {
+  color: #8BDB81 !important;
+  -webkit-transform: rotate(90deg) !important;
+          transform: rotate(90deg) !important;
+}
+/*# sourceMappingURL=socialbar.module.css.map */

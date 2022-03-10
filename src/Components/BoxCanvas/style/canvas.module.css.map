@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,OAAO,CAAA;EACH,KAAK,EAAE,gBAAgB;EACvB,MAAM,EAAE,gBAAgB;CAC3B",
+    "sources": [
+        "canvas.module.scss",
+        "../../SCSS/mixins.scss",
+        "../../SCSS/variables.scss"
+    ],
+    "names": [],
+    "file": "canvas.module.css"
+}

@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+.canvasWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+}
+
+.canvasUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.canvasMiddle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.canvasDown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tags {
+  display: inline-block;
+  margin: 10px 10px 10px 0;
+  color: #808080;
+  font-size: 16px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.skillsWrapper {
+  padding: 2rem 0;
+}
+
+.skillsTitle {
+  color: #fff;
+  width: 100%;
+}
+
+.letterAnimation {
+  font-size: 8rem;
+  color: #fff;
+  font-family: 'Fredoka One', cursive;
+  cursor: default;
+  display: inline-block;
+}
+
+.letterAnimation:hover {
+  -webkit-animation: letter 1s ease-in-out infinite;
+          animation: letter 1s ease-in-out infinite;
+  color: #8BDB81 !important;
+}
+
+@-webkit-keyframes letter {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  75% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes letter {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  75% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.skillsBars {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.skillsBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: .5rem 0;
+}
+
+.skillsBarTitle {
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Fredoka One', cursive;
+  margin-bottom: 10px;
+}
+
+.skillsBarProgress {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #808080;
+}
+
+.skillsBarProgressReact {
+  width: 65%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #6CD8FE;
+}
+
+.skillSubTitle {
+  font-size: 18px;
+  color: #808080;
+  font-family: 'Fredoka One', cursive;
+  margin-bottom: 10px;
+}
+
+.skillsBarProgressJavascript {
+  width: 70%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #FFCD00;
+}
+
+.skillsBarProgressSass {
+  width: 90%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #C7568E;
+}
+
+.skillsBarProgressCSS {
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #479BD3;
+}
+
+.skillsBarProgressHTML {
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #D36636;
+}
+
+.skillsBarProgressGit {
+  width: 90%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #E54C32;
+}
+
+.skillsBarProgressBootstrap {
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #6E43A3;
+}
+
+.exampleCursor {
+  width: 50px;
+  position: absolute;
+  z-index: 99;
+  -webkit-animation: blink 2s infinite;
+          animation: blink 2s infinite;
+}
+
+.cursor {
+  width: 50px;
+  -webkit-filter: brightness(0) invert(0.2);
+          filter: brightness(0) invert(0.2);
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+    left: 10%;
+  }
+  100% {
+    opacity: 1;
+    left: 80%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+    left: 10%;
+  }
+  100% {
+    opacity: 1;
+    left: 80%;
+  }
+}
+/*# sourceMappingURL=skills.module.css.map */
