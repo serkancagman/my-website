@@ -1,0 +1,45 @@
+@import "../../SCSS/mixins.scss";
+@import "../../SCSS/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+.mainHeader {
+  width: 100%;
+}
+.headerInner {
+  padding: 0 1rem;
+  background-color: $maincolor;
+}
+.navLogo {
+  text-decoration: none;
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Source Code Pro", monospace;
+}
+.logoInner {
+  @include flexcolcenter;
+  .logoImg {
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    .logoImg {
+      transform: rotate(180deg);
+    }
+  }
+}
+.logoTitle {
+  display: inline-block;
+  margin-top: 5px;
+}
+.navLink {
+  color: $purple;
+  margin: 10px 0.7rem;
+  text-decoration: none;
+  font-size: 18px;
+
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    color: $green !important;
+  }
+}

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+.mainHeader {
+  width: 100%;
+}
+
+.headerInner {
+  padding: 0 1rem;
+  background-color: #191918;
+}
+
+.navLogo {
+  text-decoration: none;
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Source Code Pro", monospace;
+}
+
+.logoInner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logoInner .logoImg {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.logoInner:hover .logoImg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.logoTitle {
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.navLink {
+  color: #8A39E1;
+  margin: 10px 0.7rem;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navLink:hover {
+  color: #8BDB81 !important;
+}
+/*# sourceMappingURL=header.module.css.map */
