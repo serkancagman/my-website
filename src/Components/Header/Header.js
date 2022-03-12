@@ -1,7 +1,7 @@
 import style from "./style/header.module.css";
 import Logo from "../../assets/logo.png";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import {FaHamburger} from 'react-icons/fa'
 const Header = () => {
   return (
@@ -20,29 +20,29 @@ const Header = () => {
           <div id="navContent" className="navbar-collapse collapse">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <Link to="/" className={style.navLink}>
+                <NavLink to="/" className={style.navLink}>
                   .home()
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link to="/about" className={style.navLink}>
+                <NavLink to="/about" className={style.navLink}>
                   .whoami()
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link to="/skills" className={style.navLink}>
+                <NavLink to="/skills" className={style.navLink}>
                   .skills()
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link to="/contact" className={style.navLink}>
+                <NavLink to="/contact" className={style.navLink}>
                   .projects()
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <Link to="/contact" className={style.navLink}>
+                <NavLink to="/contact" className={style.navLink}>
                   .contact()
-                </Link>
+                </NavLink>
               </li>
             </ul>
           </div>

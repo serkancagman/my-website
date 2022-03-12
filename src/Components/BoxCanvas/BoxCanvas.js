@@ -3,10 +3,10 @@ import { OrbitControls } from "@react-three/drei";
 import Box from "../Box/Box";
 import { Canvas } from "@react-three/fiber";
 const BoxCanvas = ({image,canvasWidth}) => {
+  
   return (
     <Canvas
-    
-    style={{ width: canvasWidth, height: canvasWidth }}
+    style={canvasWidth}
     camera={{ position: [-5, 2, 10], fov: 60 }}
   >
     <OrbitControls enableZoom={false} />

@@ -147,7 +147,7 @@
 
 .skillsBars {
   width: 100%;
-  padding: 10px 0;
+  padding: 5px 0;
 }
 
 .skillsBar {
@@ -204,7 +204,7 @@
 }
 
 .skillsBarProgressSass {
-  width: 90%;
+  width: 100%;
   height: 10px;
   border-radius: 10px;
   background-color: #C7568E;
@@ -271,6 +271,12 @@
   100% {
     opacity: 1;
     left: 80%;
+  }
+}
+
+@media screen and (max-width: 280.99px) {
+  .letterAnimation {
+    font-size: 6rem !important;
   }
 }
 /*# sourceMappingURL=skills.module.css.map */

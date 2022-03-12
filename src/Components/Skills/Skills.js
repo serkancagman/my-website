@@ -9,51 +9,40 @@ import htmlImg from "../../assets/html.png";
 import cssImg from "../../assets/css.png";
 import bootstrapImg from "../../assets/bootstrap.png";
 import cursor from "../../assets/cursor.png";
-
+import { bodyTags } from "../../Helpers/HelperItems";
+import { ScreenWidthContext } from "../../Context/ScreenWidthContext";
 
 const Skills = () => {
-    const [boxWidth, setBoxWidth] = React.useState(150);
-    const [showCursor, setShowCursor] = React.useState("block");
+  const { windowDimensions } = React.useContext(ScreenWidthContext);
 
-    function getWindowDimensions() {
-      const { innerWidth: width, innerHeight: height } = window;
-      return {
-        width,
-        height
-      };
+  const [boxWidth, setBoxWidth] = React.useState({
+    width: "150px",
+    height: "150px",
+    margin: "20px",
+  });
+  const [showCursor, setShowCursor] = React.useState("block");
+
+  React.useEffect(() => {
+    if (windowDimensions.width > 300 && windowDimensions.width < 900) {
+      setBoxWidth({
+        width: "100px",
+        height: "100px",
+        margin: "5px",
+      });
+    } else if (windowDimensions.width < 300) {
+      setBoxWidth({
+        width: "70px",
+        height: "70px",
+        margin: 0,
+      });
+    } else {
+      setBoxWidth({
+        width: "150px",
+        height: "150px",
+        margin: "20px",
+      });
     }
-      const [windowDimensions, setWindowDimensions] = React.useState(getWindowDimensions());
-    
-      React.useEffect(() => {
-        function handleResize() {
-          setWindowDimensions(getWindowDimensions());
-        }
-    
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-      }, []);
-    
-      
-    
-    React.useEffect(() => {
-      if (windowDimensions.width < 900) {
-        setBoxWidth(100);
-      } else {
-        setBoxWidth(150);
-      }
-    }, [windowDimensions.width]);
-
-  
-
-
-  const bodyTags = {
-    body: `<body>`,
-    bodyClose: `</body>`,
-    h1: `<h1>`,
-    h1Close: `</h1>`,
-    article: `<article>`,
-    articleClose: `</article>`,
-  };
+  }, [windowDimensions.width]);
 
   return (
     <section className="mainSkills">
@@ -131,7 +120,9 @@ const Skills = () => {
               </div>
               <div className={style.skillsBars}>
                 <div className={style.skillsBar}>
-                  <h6 className={style.skillsBarTitle}>GIT <span className={style.skillSubTitle}> - Learning</span></h6>
+                  <h6 className={style.skillsBarTitle}>
+                    GIT <span className={style.skillSubTitle}> - Learning</span>
+                  </h6>
                   <div className={style.skillsBarProgress}>
                     <div className={style.skillsBarProgressGit}></div>
                   </div>
@@ -139,10 +130,16 @@ const Skills = () => {
               </div>
             </div>
             <div className="col-md-6 col-lg-6">
-              <div onClick={()=> setShowCursor("none")} className={style.canvasWrapper}>
-                <div className={style.exampleCursor} style={{display:showCursor}} >
+              <div
+                onMouseOver={() => setShowCursor("none")}
+                className={style.canvasWrapper}
+              >
+                <div
+                  className={style.exampleCursor}
+                  style={{ display: showCursor }}
+                >
                   <img className={style.cursor} src={cursor} alt="cursor" />
-                  </div>
+                </div>
                 <div className={style.canvasUp}>
                   <BoxCanvas canvasWidth={boxWidth} image={reactImg} />
                   <BoxCanvas canvasWidth={boxWidth} image={jsImg} />

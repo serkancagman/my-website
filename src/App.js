@@ -1,9 +1,12 @@
-import React from 'react'
-import MainRouter from './MainRouter';
+import React from "react";
+import { ScreenWidthProvider } from "./Context/ScreenWidthContext";
+import MainRouter from "./MainRouter";
 
 function App() {
   return (
-    <MainRouter/>
+    <ScreenWidthProvider>
+      <MainRouter />
+    </ScreenWidthProvider>
   );
 }
 
