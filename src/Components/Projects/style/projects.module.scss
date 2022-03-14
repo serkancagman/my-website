@@ -1,0 +1,23 @@
+@import "../../SCSS/mixins.scss";
+@import "../../SCSS/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+.tags{
+    @include tags;
+    display: block !important;
+}
+.letterAnimation{
+    font-size: 8rem;
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+    cursor: default;
+    &:hover{
+        animation: letter 1s ease-in-out infinite;
+        color: $green !important;
+    }
+    
+    display: inline-block;
+}
+@include letterAnimation;
