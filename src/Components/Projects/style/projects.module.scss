@@ -1,23 +1,83 @@
 @import "../../SCSS/mixins.scss";
 @import "../../SCSS/variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 
-
-.tags{
-    @include tags;
-    display: block !important;
+.tags {
+  @include tags;
+  display: block !important;
 }
-.letterAnimation{
-    font-size: 8rem;
-    color: #fff;
-    font-family: 'Fredoka One', cursive;
-    cursor: default;
-    &:hover{
-        animation: letter 1s ease-in-out infinite;
-        color: $green !important;
-    }
-    
-    display: inline-block;
+.letterAnimation {
+  font-size: 8rem;
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+  cursor: default;
+  &:hover {
+    animation: letter 1s ease-in-out infinite;
+    color: $green !important;
+  }
+
+  display: inline-block;
 }
 @include letterAnimation;
+
+.projectCard {
+  width: 100%;
+  height: 100%;
+}
+
+.projectImg {
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+}
+
+.projectCardImg {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  &:hover {
+    .projectCardInfo {
+      opacity: 1 !important;
+    }
+    .projectImg {
+      transform: scale(1.15);
+    }
+  }
+}
+.projectCardInfo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.5s ease-in-out;
+}
+.techIcon {
+  width: 40px;
+  height: auto;
+}
+.iconWrapper {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  &:hover {
+    .eyeIcon {
+      transform: scale(1.2);
+    }
+  }
+}
+.eyeIcon {
+  transition: all 0.2s ease-in-out;
+  font-size: 50px;
+  color: $green;
+}
