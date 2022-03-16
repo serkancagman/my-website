@@ -11,8 +11,8 @@ import {
   ModalBody,
   ModalCloseButton,
 } from "@chakra-ui/react";
-const ProjectModal = ({ data,isOpen,onClose }) => {
-    console.log(data);
+const ProjectModal = ({ data, isOpen, onClose }) => {
+  console.log(data);
   return (
     <Modal
       isOpen={isOpen}
@@ -26,22 +26,24 @@ const ProjectModal = ({ data,isOpen,onClose }) => {
         <ModalHeader>{data && data.title}</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
-        <Swiper
-        direction={"horizontal"}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
-      >
-       {
-              data && data.projectImages.map((item,index)=>{
-                  return(
-                    <SwiperSlide key={index}> <img className="img-fluid" src={item} alt="project" /></SwiperSlide>
-                  )})
-       }
-      
-      </Swiper>
+          <Swiper
+            direction={"horizontal"}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {data &&
+              data.projectImages.map((item, index) => {
+                return (
+                  <SwiperSlide key={index}>
+                    {" "}
+                    <img className="img-fluid" src={item} alt="project" />
+                  </SwiperSlide>
+                );
+              })}
+          </Swiper>
         </ModalBody>
       </ModalContent>
     </Modal>

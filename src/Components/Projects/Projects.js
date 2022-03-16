@@ -2,9 +2,8 @@ import React from "react";
 import style from "./style/projects.module.css";
 import { bodyTags, projects } from "../../Helpers/HelperItems";
 import { FaEye } from "react-icons/fa";
-import { useDisclosure} from "@chakra-ui/react";
+import { useDisclosure } from "@chakra-ui/react";
 import ProjectModal from "./ProjectModal";
-
 
 const Projects = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -72,7 +71,7 @@ const Projects = () => {
             );
           })}
         </div>
-          <ProjectModal isOpen={isOpen} onClose={onClose} data={currentData} />
+        <ProjectModal isOpen={isOpen} onClose={onClose} data={currentData} />
         <span className={style.tags}>{bodyTags.bodyClose}</span>
       </div>
     </section>

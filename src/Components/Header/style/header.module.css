@@ -80,7 +80,7 @@
   color: #8BDB81 !important;
 }
 
-@media screen and (max-width: 767.99px) {
+@media screen and (max-width: 767.9px) {
   .hamburgerBtn {
     display: block !important;
   }

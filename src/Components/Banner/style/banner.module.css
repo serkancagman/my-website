@@ -26,7 +26,7 @@
 
 .letterAnimation {
   display: inline-block;
-  min-width: 20px;
+  min-width: 15px;
   font-size: 4rem;
   color: #fff;
   font-family: "Fredoka One", cursive;
@@ -40,8 +40,8 @@
 }
 
 .tags {
-  display: inline-block;
-  margin: 20px 10px 10px 0;
+  display: block;
+  margin: 10px 10px 10px 0;
   color: #808080;
   font-size: 16px;
   font-family: "Source Code Pro", monospace;
@@ -49,7 +49,7 @@
 
 .nameLetter {
   display: inline-block;
-  min-width: 20px;
+  min-width: 10px;
   font-size: 4rem;
   color: #8BDB81;
   font-family: "Fredoka One", cursive;
@@ -185,9 +185,44 @@
   left: -20px;
 }
 
+@media screen and (max-width: 768px) and (min-width: 400px) {
+  .letterAnimation {
+    font-size: 2.3rem !important;
+  }
+  .nameLetter {
+    font-size: 2.3rem !important;
+    min-width: 10px !important;
+  }
+}
+
+@media screen and (max-width: 400px) and (min-width: 300px) {
+  .letterAnimation {
+    font-size: 2rem !important;
+    min-width: 8px !important;
+  }
+  .nameLetter {
+    font-size: 2rem !important;
+    min-width: 10px !important;
+  }
+}
+
+@media screen and (width: 1024px) {
+  .letterAnimation {
+    font-size: 2.5rem !important;
+    min-width: 7px !important;
+  }
+  .nameLetter {
+    font-size: 2.5rem !important;
+    min-width: 10px !important;
+  }
+}
+
 @media screen and (max-width: 280.99px) {
   .letterAnimation {
-    font-size: 6rem !important;
+    font-size: 2.3rem !important;
+  }
+  .nameLetter {
+    font-size: 2.3rem !important;
   }
 }
 /*# sourceMappingURL=banner.module.css.map */

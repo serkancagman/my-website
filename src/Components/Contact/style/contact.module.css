@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+.tags {
+  display: block;
+  margin: 10px 10px 10px 0;
+  color: #808080;
+  font-size: 16px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.letterAnimation {
+  display: inline-block;
+  min-width: 15px;
+  font-size: 6rem;
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+  cursor: default;
+}
+
+.letterAnimation:hover {
+  -webkit-animation: letter 1s ease-in-out infinite;
+          animation: letter 1s ease-in-out infinite;
+  color: #8BDB81 !important;
+}
+
+@-webkit-keyframes letter {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  75% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes letter {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  75% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.contactWrapper {
+  padding-left: 20px;
+}
+
+.nameLetter {
+  display: inline-block;
+  min-width: 10px;
+  font-size: 6rem;
+  color: #8BDB81;
+  font-family: "Fredoka One", cursive;
+  cursor: default;
+}
+
+.nameLetter:hover {
+  -webkit-animation: letter 1s ease-in-out infinite;
+          animation: letter 1s ease-in-out infinite;
+  color: #8A39E1 !important;
+}
+
+.contactText {
+  color: #fff;
+}
+
+.contactInput {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  outline: none;
+  background-color: #191918;
+  color: #fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.contactInput:focus {
+  border-bottom: 2px solid #8BDB81;
+}
+
+.contactInput::-webkit-input-placeholder {
+  color: gray;
+}
+
+.contactInput:-ms-input-placeholder {
+  color: gray;
+}
+
+.contactInput::-ms-input-placeholder {
+  color: gray;
+}
+
+.contactInput::placeholder {
+  color: gray;
+}
+
+.contactButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.contactButton .sendButton {
+  width: 180px;
+  padding: 1rem 1rem;
+  background-color: transparent;
+  color: #8BDB81;
+  border: 1px solid #8BDB81;
+  font-weight: 600;
+  overflow: hidden;
+  font-family: "Source Code Pro", monospace;
+}
+
+.contactButton .sendButton::before {
+  content: "";
+  width: 200px;
+  height: 100%;
+  background-color: #8BDB81;
+  position: absolute;
+  left: -180px;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.contactButton .sendButton:hover {
+  color: #000;
+}
+
+.contactButton .sendButton:hover::before {
+  left: -20px;
+}
+
+.errorInput {
+  border-bottom: 2px solid red !important;
+}
+/*# sourceMappingURL=contact.module.css.map */

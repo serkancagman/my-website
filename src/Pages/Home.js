@@ -1,5 +1,5 @@
-import {Header,SocialBar} from '../Components'
-import Banner from '../Components/Banner/Banner'
+import {Header,SocialBar,Banner} from '../Components'
+
 
 const Home = () => {
   return (

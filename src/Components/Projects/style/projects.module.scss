@@ -8,7 +8,7 @@
   display: block !important;
 }
 .letterAnimation {
-  font-size: 8rem;
+  font-size: 6rem;
   color: #fff;
   font-family: "Fredoka One", cursive;
   cursor: default;
@@ -80,4 +80,25 @@
   transition: all 0.2s ease-in-out;
   font-size: 50px;
   color: $green;
+}
+@media screen and (max-width:400.99px){
+  .letterAnimation{
+      font-size: 4rem !important;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 400px) {
+  .letterAnimation{
+    font-size: 4rem !important;
+  }.nameLetter{
+    font-size: 4rem !important;
+  }
+}
+
+@media screen and (max-width: 280.99px) {
+  .letterAnimation {
+    font-size: 2.3rem !important;
+  }
+  .nameLetter{
+    font-size: 2.3rem !important;
+  }
 }

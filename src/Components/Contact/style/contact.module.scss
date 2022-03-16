@@ -1,0 +1,90 @@
+@import "../../SCSS/mixins.scss";
+@import "../../SCSS/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+.tags {
+  @include tags;
+}
+.letterAnimation {
+  display: inline-block;
+  min-width: 15px;
+  font-size: 6rem;
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+  cursor: default;
+  &:hover {
+    animation: letter 1s ease-in-out infinite;
+    color: $green !important;
+  }
+}
+@include letterAnimation;
+.contactWrapper {
+  padding-left: 20px;
+}
+.nameLetter {
+  display: inline-block;
+  min-width: 10px;
+  font-size: 6rem;
+  color: $green;
+  font-family: "Fredoka One", cursive;
+  cursor: default;
+  &:hover {
+    animation: letter 1s ease-in-out infinite;
+    color: $purple !important;
+  }
+}
+.contactText {
+  color: #fff;
+}
+.contactInput {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid transparent;
+  outline: none;
+  background-color: $maincolor;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  &:focus {
+    border-bottom: 2px solid $green;
+  }
+  &::placeholder {
+    color: gray;
+  }
+}
+.contactButton {
+  display: flex;
+  margin-top: 1rem;
+  position: relative;
+  overflow: hidden;
+
+  .sendButton {
+    width: 180px;
+    padding: 1rem 1rem;
+    background-color: transparent;
+    color: $green;
+    border: 1px solid $green;
+    font-weight: 600;
+    overflow: hidden;
+    font-family: "Source Code Pro", monospace;
+    &::before {
+      content: "";
+      width: 200px;
+      height: 100%;
+      background-color: $green;
+      position: absolute;
+      left: -180px;
+      top: 0;
+      z-index: -1;
+      transition: all 0.3s ease-in-out;
+    }
+    &:hover {
+      color: #000;
+
+      &::before {
+        left: -20px;
+      }
+    }
+  }
+}
+.errorInput {
+  border-bottom: 2px solid red !important;
+}

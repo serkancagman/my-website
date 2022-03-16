@@ -1,56 +1,54 @@
-
 @mixin flexrowcenter {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;    
+  align-items: center;
 }
 @mixin flexrowsw {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;        
+  align-items: center;
 }
 @mixin flexcolcenter {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;        
+  align-items: center;
 }
 @mixin flexcolfs {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;        
+  align-items: flex-start;
 }
-@mixin letterAnimation{
+@mixin letterAnimation {
   @keyframes letter {
     0% {
-        transform: translateY(0);
+      transform: translateY(0);
     }
     25% {
-        transform: translateY(10px);
+      transform: translateY(10px);
     }
     50% {
-        transform: translateY(-10px);
+      transform: translateY(-10px);
     }
     75% {
-        transform: translateY(10px);
+      transform: translateY(10px);
     }
     100% {
-        transform: translateY(0);
+      transform: translateY(0);
     }
-    
+  }
 }
-}
-@mixin tags{
-  display: inline-block;
-  margin: 20px 10px 10px 0;
+@mixin tags {
+  display: block;
+  margin: 10px 10px 10px 0;
   color: #808080;
   font-size: 16px;
   font-family: "Source Code Pro", monospace;
 }
-@mixin skillBar($barwidth, $color){
+@mixin skillBar($barwidth, $color) {
   width: $barwidth;
   height: 10px;
   border-radius: 10px;

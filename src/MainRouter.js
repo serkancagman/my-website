@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import {Home,SkillsPage} from './Pages'
-import ProjectsPage from './Pages/ProjectsPage'
+import {Home,SkillsPage,ContactPage,ProjectsPage} from './Pages'
+
 
 const MainRouter = () => {
   return (
@@ -9,6 +9,7 @@ const MainRouter = () => {
         <Route path='/' element={<Home/>} />
         <Route path='/skills' element={<SkillsPage/>} />
         <Route path='/projects' element={<ProjectsPage/>} />
+        <Route path='/contact' element={<ContactPage/>} />
     </Routes>
   )
 }

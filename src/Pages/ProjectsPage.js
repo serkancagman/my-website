@@ -1,6 +1,6 @@
 import React from 'react'
-import { Header, SocialBar } from '../Components'
-import Projects from '../Components/Projects/Projects'
+import { Header, SocialBar,Projects } from '../Components'
+
 
 const ProjectsPage = () => {
   return (
