@@ -3,6 +3,7 @@ import style from "./style/contact.module.css";
 import { bodyTags } from "../../Helpers/HelperItems";
 import { useFormik } from "formik";
 import validationSchema from "./Validation";
+import ContactCanvas from "./ContactCanvas";
 const Contact = () => {
   const { handleSubmit, handleChange, values, errors, handleBlur, touched } =
     useFormik({
@@ -22,7 +23,7 @@ const Contact = () => {
     <section>
       <div className="container">
         <span className={style.tags}>{bodyTags.body}</span>
-        <div className="row">
+        <div className="row justify-content-center align-items-center">
           <div className="col-md-12 col-lg-6">
             <div className={style.contactWrapper}>
               <span className={style.tags}>{bodyTags.h1}</span>
@@ -109,6 +110,9 @@ const Contact = () => {
               </form>
               <span className={style.tags}>{bodyTags.formClose}</span>
             </div>
+          </div>
+          <div className="col-md-6 col-lg-6">
+            <ContactCanvas/>
           </div>
         </div>
       </div>

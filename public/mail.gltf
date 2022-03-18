@@ -1,0 +1,349 @@
+{
+  "accessors": [
+    {
+      "componentType": 5125,
+      "count": 1800,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 640,
+      "max": [
+        1.007843137254902,
+        1.007843137254902,
+        1.007843137254902
+      ],
+      "min": [
+        -1.007843137254902,
+        -1.007843137254902,
+        -1.007843137254902
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 640,
+      "max": [
+        0.2705580028138861,
+        0.3505862080066682,
+        1.6506287974733578
+      ],
+      "min": [
+        -0.25058621396713276,
+        -0.8505662106483461,
+        0.9794138051063536
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5125,
+      "count": 336,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 137,
+      "max": [
+        0.9571999851395101,
+        0.9571999851395101,
+        1.007843137254902
+      ],
+      "min": [
+        -0.9565255050565682,
+        -0.9565255050565682,
+        -1.007843137254902
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 137,
+      "max": [
+        0.05063507497550862,
+        0.05063507497550862,
+        1.0004885197850513
+      ],
+      "min": [
+        -0.050488520530109354,
+        -0.050488520530109354,
+        -0.0004885197850512946
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5125,
+      "count": 480,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 246,
+      "max": [
+        0.9916630373281592,
+        1.007843137254902,
+        0.9916630373281592
+      ],
+      "min": [
+        -0.9926506881620369,
+        -1.007843137254902,
+        -0.9926506881620369
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 246,
+      "max": [
+        0.21843688098261516,
+        0.31030288465324707,
+        1.2799663961253984
+      ],
+      "min": [
+        -0.2092328829318649,
+        -0.310302884653247,
+        1.0131271170824403
+      ],
+      "type": "VEC3"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Jens (https://sketchfab.com/excitedneon)",
+      "license": "CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)",
+      "source": "https://sketchfab.com/3d-models/30days3d-day-3-mail-box-357acbf2a0d04aa591a7d71982af0436",
+      "title": "#30Days3D - Day 3 - Mail Box"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 1193
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1200,
+      "byteLength": 388
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 1592,
+      "byteLength": 488
+    }
+  ],
+  "buffers": [
+    {
+      "name": "mail",
+      "byteLength": 2080,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Paper",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          0.8853815793991089,
+          0.6713529825210571,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "doubleSided": true,
+      "name": "Red_Metal",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          -2.0000001715255737,
+          0.920925017073750496,
+          9.115837308019399649,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    },
+    {
+      "doubleSided": true,
+      "name": "Gray_Metal",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.517332911491394,
+          0.517332911491394,
+          0.517332911491394,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mailbox_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 2
+          },
+          "indices": 0,
+          "material": 1,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Mailbox_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 5
+          },
+          "indices": 3,
+          "material": 2,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 1,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Letters_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 7,
+            "POSITION": 8
+          },
+          "indices": 6,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 2,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.220446049250313e-16,
+        -1,
+        0,
+        0,
+        1,
+        2.220446049250313e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2,
+        5
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        3,
+        4
+      ],
+      "name": "Mailbox"
+    },
+    {
+      "mesh": 0,
+      "name": "Mailbox_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Mailbox_1"
+    },
+    {
+      "children": [
+        6
+      ],
+      "name": "Letters"
+    },
+    {
+      "mesh": 2,
+      "name": "Letters_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}
