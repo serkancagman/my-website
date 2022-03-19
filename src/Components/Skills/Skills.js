@@ -20,7 +20,7 @@ const Skills = () => {
     height: "150px",
     margin: "20px",
   });
-  const [showCursor, setShowCursor] = React.useState("block");
+ 
 
   React.useEffect(() => {
     if (windowDimensions.width > 300 && windowDimensions.width < 900) {
@@ -131,15 +131,10 @@ const Skills = () => {
             </div>
             <div className="col-md-6 col-lg-6">
               <div
-                onMouseOver={() => setShowCursor("none")}
+                
                 className={style.canvasWrapper}
               >
-                <div
-                  className={style.exampleCursor}
-                  style={{ display: showCursor }}
-                >
-                  <img className={style.cursor} src={cursor} alt="cursor" />
-                </div>
+               
                 <div className={style.canvasUp}>
                   <BoxCanvas canvasWidth={boxWidth} image={reactImg} />
                   <BoxCanvas canvasWidth={boxWidth} image={jsImg} />

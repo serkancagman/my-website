@@ -16,14 +16,18 @@
     color: $green !important;
   }
 }
+.contactMain{
+  padding: 2rem 0;
+}
 @include letterAnimation;
 .contactWrapper {
   padding-left: 20px;
+  height: 100%;
 }
 .nameLetter {
   display: inline-block;
   min-width: 10px;
-  font-size: 6rem;
+  font-size: 5.5rem;
   color: $green;
   font-family: "Fredoka One", cursive;
   cursor: default;
@@ -33,6 +37,7 @@
   }
 }
 .contactText {
+  margin: 1rem 0;
   color: #fff;
 }
 .contactInput {
@@ -42,7 +47,7 @@
   outline: none;
   background-color: $maincolor;
   color: #fff;
-  transition: all 0.2s ease-in-out;
+  transition: border-bottom 0.2s ease-in-out;
   &:focus {
     border-bottom: 2px solid $green;
   }
@@ -51,14 +56,16 @@
   }
 }
 .contactButton {
+  margin-right: 10px;
   display: flex;
   margin-top: 1rem;
   position: relative;
   overflow: hidden;
-
+ 
+  justify-content: space-between;
   .sendButton {
     width: 180px;
-    padding: 1rem 1rem;
+    padding: 1rem;
     background-color: transparent;
     color: $green;
     border: 1px solid $green;
@@ -87,4 +94,103 @@
 }
 .errorInput {
   border-bottom: 2px solid red !important;
+}
+
+.mailIcon{
+  color: $green;
+  font-size: 1.2rem;
+  margin-right: .5rem;
+}
+.email{
+  color: $purple;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+.contactButtonWrapper{
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+.messageSuccess{
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  color: $green;
+  padding: 1rem;
+  border: 2px solid $green;
+  animation: messageBox .3s ease-in-out;
+}
+@media screen and (max-width:540px) and (min-width:500px) {
+  .contactWrapper{
+    padding-left: 0 !important;
+  }
+  .letterAnimation{
+    font-size: 4rem !important;
+  }
+  .nameLetter {
+    font-size: 4rem !important;
+  }
+  
+}
+@media screen and (max-width:499.90px) {
+  .contactButtonWrapper{
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  
+}
+@media screen and (max-width: 474.90px) {
+  .contactButtonWrapper{
+    flex-direction: column !important;
+  }
+  .contactWrapper{
+    padding-left: 0 !important;
+  }
+  .nameLetter {
+    min-width: 0 !important;
+  }
+  .letterAnimation {
+    min-width: 0 !important;
+  }
+  
+}
+@media screen and (max-width:412px) and (min-width:320px) {
+  .letterAnimation{
+    font-size: 5rem !important;
+  }
+  .nameLetter {
+    font-size: 5rem !important;
+  }
+  
+}
+
+
+@media screen and (max-width:280px){
+  .letterAnimation{
+    font-size: 4rem !important;
+  }
+  .nameLetter {
+    font-size: 4rem !important;
+  }
+  .email{
+    font-size: 1rem !important;
+  }
+  .sendButton{
+    width: 130px !important;
+    padding: .7rem !important;
+  }
+}
+
+
+@keyframes messageBox {
+  0% {
+    opacity: 0;
+    transform: bottom(0);
+  }
+  100% {
+    opacity: 1;
+    transform: bottom(30px);
+  }
+  
 }

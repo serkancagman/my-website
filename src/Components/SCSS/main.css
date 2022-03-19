@@ -2,6 +2,8 @@
     color: #8BDB81 !important;
 }
 body{
+    user-select: none;
+    height: 100%;
     background-color: #1D1D1D !important;
     position: relative;
     overflow-x: hidden;

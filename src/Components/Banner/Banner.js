@@ -10,6 +10,19 @@ import { Link } from "react-router-dom";
 const Banner = () => {
   const { windowDimensions } = React.useContext(ScreenWidthContext);
   const [showCursor, setShowCursor] = React.useState("block");
+  const [canvasWidth, setCanvasWidth] = React.useState({
+    width: "100%",
+    height: "500px",
+  });
+  React.useEffect(() => {
+    if(windowDimensions.width <= 450) {
+      setCanvasWidth({
+        width: "300px",
+        height: "300px",
+      });
+    }
+  
+  }, [windowDimensions.width]);
 
   return (
     <section className={style.mainBanner}>
@@ -57,13 +70,11 @@ const Banner = () => {
                 <img className={style.cursor} src={cursor} alt="cursor" />
               </div>
               <Canvas
-                style={{
-                  width: "100%",
-                  height: "500px",
-                }}
+                style={canvasWidth}
               >
                 <OrbitControls enableZoom={false} />
                 <ambientLight color="purple" intensity={0.9} />
+                <ambientLight position={[-500,-1,90]} color="purple" intensity={0.9} />
                 <pointLight
                   color="green"
                   position={[-2, 5, 2]}

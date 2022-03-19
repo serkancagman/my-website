@@ -27,7 +27,6 @@ const ProjectModal = ({ data, isOpen, onClose }) => {
         <ModalCloseButton />
         <ModalBody>
           <Swiper
-            direction={"horizontal"}
             pagination={{
               clickable: true,
             }}

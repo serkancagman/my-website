@@ -4,7 +4,9 @@ import { bodyTags } from "../../Helpers/HelperItems";
 import { useFormik } from "formik";
 import validationSchema from "./Validation";
 import ContactCanvas from "./ContactCanvas";
+import { HiOutlineMailOpen } from "react-icons/hi";
 const Contact = () => {
+  const [isMessage, setIsMessage] = React.useState(false);
   const { handleSubmit, handleChange, values, errors, handleBlur, touched } =
     useFormik({
       initialValues: {
@@ -15,12 +17,15 @@ const Contact = () => {
       },
       validationSchema,
       onSubmit: (values) => {
-        console.log(values);
+        setIsMessage(true);
+        setTimeout(() => {
+          setIsMessage(false);
+        }, 3000);
       },
     });
 
   return (
-    <section>
+    <section className={style.contactMain}>
       <div className="container">
         <span className={style.tags}>{bodyTags.body}</span>
         <div className="row justify-content-center align-items-center">
@@ -40,13 +45,14 @@ const Contact = () => {
                 <span className={style.nameLetter}>e</span>
               </h1>
               <span className={style.tags}>{bodyTags.h1Close}</span>
-              <span className={style.tags}>{bodyTags.paragraph}</span>
+
               <p className={style.contactText}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque euismod, urna eu tincidunt consectetur,
+                If you like my works and you think you have a good idea to work
+                with me, contact me without waiting any longer!
               </p>
-              <span className={style.tags}>{bodyTags.paragraphClose}</span>
+
               <span className={style.tags}>{bodyTags.form}</span>
+              
               <form onSubmit={handleSubmit} className="p-1">
                 <div className="row justify-content-center align-items-center g-3">
                   <div className="col-md-6">
@@ -87,17 +93,21 @@ const Contact = () => {
                   </div>
                   <div className="col-md-12">
                     <textarea
+                      rows="4"
+                      cols="50"
+                      wrap="soft"
                       onBlur={handleBlur}
                       onChange={handleChange}
                       name="message"
                       className={`${style.contactInput} ${
                         errors.message && touched.message && style.errorInput
                       }`}
-                      rows="5"
                       placeholder="Message"
                     ></textarea>
                   </div>
                 </div>
+                <span className={style.tags}>{bodyTags.formClose}</span>
+                <div className={style.contactButtonWrapper}>
                 <div className={style.contactButton}>
                   <button
                     type="submit"
@@ -106,16 +116,32 @@ const Contact = () => {
                   >
                     Send
                   </button>
+                  </div>
+                  <div className="d-flex mt-1 align-items-center">
+                <HiOutlineMailOpen className={style.mailIcon} />
+                <button
+                  onClick={() =>
+                    (window.location = "mailto:serkancagmann@gmail.com")
+                  }
+                  className={style.email}
+                >
+                  serkancagmann@gmail.com
+                </button>
+                </div>
+                
+             
                 </div>
               </form>
-              <span className={style.tags}>{bodyTags.formClose}</span>
             </div>
           </div>
           <div className="col-md-6 col-lg-6">
-            <ContactCanvas/>
+            <ContactCanvas />
           </div>
         </div>
       </div>
+      {isMessage && (
+        <div className={style.messageSuccess}>Message sent successfully!</div>
+      )}
     </section>
   );
 };
