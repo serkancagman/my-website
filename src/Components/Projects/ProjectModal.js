@@ -12,7 +12,6 @@ import {
   ModalCloseButton,
 } from "@chakra-ui/react";
 const ProjectModal = ({ data, isOpen, onClose }) => {
-  console.log(data);
   return (
     <Modal
       isOpen={isOpen}

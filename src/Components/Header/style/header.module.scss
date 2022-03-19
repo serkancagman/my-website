@@ -10,6 +10,10 @@
   padding: 0 1rem;
   background-color: $maincolor;
 }
+.logoImg{
+  width: 50px;
+  height: 50px;
+}
 .navLogo {
   text-decoration: none;
   color: #fff !important;
@@ -64,5 +68,19 @@
 @media screen and (max-width:767.90px) {
   .hamburgerBtn{
     display: block !important;
+  }
+  .navbarNav{
+    margin-top: 10px;
+    margin-left: 0 !important;
+  }
+  .navLink{
+    display: inline-block;
+    margin: 5px;
+  }
+}
+@media screen and (max-width:289.90px) {
+  .logoImg{
+    width: 40px !important;
+    height: 40px !important;
   }
 }

@@ -18,7 +18,7 @@ const ContactCanvas = () => {
       }}
     >
       <OrbitControls enableZoom={false} />
-      <ambientLight color=" #fff" intensity={0.4} />
+      <ambientLight color="#fff" intensity={0.4} />
       <pointLight color="#fff" position={[-2, 5, 2]} intensity={0.5} />
       <Suspense fallback={null}>
         <Pigeon />

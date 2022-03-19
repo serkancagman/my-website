@@ -1,15 +1,21 @@
-import React from 'react'
-import { Header, SocialBar } from '../Components'
-import Skills from '../Components/Skills/Skills'
+import React from "react";
+import { Header, SocialBar, Loader, Skills } from "../Components";
 
 const SkillsPage = () => {
+  const [isLoading, setIsLoading] = React.useState(true);
+  React.useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2500);
+  }, []);
   return (
-      <>
-    <Header/>
-    <SocialBar/>
-    <Skills/>
+    <>
+      {isLoading && <Loader />}
+      <Header />
+      <SocialBar />
+      <Skills />
     </>
-  )
-}
+  );
+};
 
-export default SkillsPage
+export default SkillsPage;

@@ -6,15 +6,15 @@ const SocialBar = () => {
   return (
     <aside className={style.asideMenu}>
         <div className={style.socialBar}>
-            <Link to='/' className={style.socialLink}>
+            <a target="_blank" rel='noopener noreferrer' href='https://github.com/serkancagman' className={style.socialLink}>
                 <FaGithubAlt className={style.socialIcon}/>
-            </Link>
-            <Link to='/' className={style.socialLink}>
+            </a>
+            <a target="_blank" rel='noopener noreferrer' href='https://www.linkedin.com/in/serkancagman/' className={style.socialLink}>
                 <FaLinkedin className={style.socialIcon}/>
-            </Link>
-            <Link to='/' className={style.socialLink}>
+            </a>
+            <a target="_blank" rel='noopener noreferrer' href='https://www.hackerrank.com/serkancagmann' className={style.socialLink}>
                 <FaHackerrank className={style.socialIcon}/>
-            </Link>
+            </a>
         </div>    
     </aside>
   )

@@ -21,8 +21,7 @@
 }
 @include letterAnimation;
 .contactWrapper {
-  padding-left: 20px;
-  height: 100%;
+  @include wrappers;
 }
 .nameLetter {
   display: inline-block;

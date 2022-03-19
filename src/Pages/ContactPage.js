@@ -1,14 +1,22 @@
-import React from 'react'
-import {Contact,Header,SocialBar} from '../Components'
+import React from "react";
+import { Contact, Header, SocialBar, Loader } from "../Components";
 
 const ContactPage = () => {
-  return (
-      <>
-    <Header />
-    <SocialBar/>
-    <Contact/>
-    </>
-  )
-}
+  const [isLoading, setIsLoading] = React.useState(true);
 
-export default ContactPage
+  React.useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2500);
+  }, []);
+  return (
+    <>
+      {isLoading && <Loader />}
+      <Header />
+      <SocialBar />
+      <Contact />
+    </>
+  );
+};
+
+export default ContactPage;

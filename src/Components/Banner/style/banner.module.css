@@ -20,8 +20,12 @@
 }
 
 .mainBanner {
-  padding: 1rem 0;
+  padding: 2rem 0;
   height: 100%;
+}
+
+.bannerWrapper {
+  padding-left: 10px;
 }
 
 .letterAnimation {
@@ -194,6 +198,9 @@
     font-size: 2.3rem !important;
     min-width: 10px !important;
   }
+  .bannerWrapper {
+    padding-left: 0 !important;
+  }
 }
 
 @media screen and (max-width: 400px) and (min-width: 300px) {
@@ -221,7 +228,7 @@
 @media screen and (max-width: 280.99px) {
   .bannerButton {
     width: 170px !important;
-    padding: .5rem !important;
+    padding: 0.5rem !important;
   }
   .letterAnimation {
     font-size: 1.6rem !important;
@@ -230,6 +237,9 @@
   .nameLetter {
     font-size: 1.6rem !important;
     min-width: 5px !important;
+  }
+  .bannerWrapper {
+    padding-left: 0 !important;
   }
 }
 /*# sourceMappingURL=banner.module.css.map */

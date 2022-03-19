@@ -1,0 +1,176 @@
+{
+  "accessors": [
+    {
+      "componentType": 5125,
+      "count": 1488,
+      "type": "SCALAR"
+    },
+    {
+      "componentType": 5126,
+      "count": 964,
+      "max": [
+        0.9856965934529025,
+        1.0077239541446463,
+        1.0103314785396353
+      ],
+      "min": [
+        -0.9983824757968678,
+        -1.007723954144646,
+        -1.005116429749657
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 964,
+      "max": [
+        0.7529765733812983,
+        0.8149733255127318,
+        1.7679668946794957
+      ],
+      "min": [
+        -1.5595178885988683,
+        -1.0274459405474157,
+        -1.7601799054674596
+      ],
+      "type": "VEC3"
+    },
+    {
+      "componentType": 5126,
+      "count": 964,
+      "max": [
+        0.8758553274682307,
+        0.7509775171065494
+      ],
+      "min": [
+        -0.000855327468230694,
+        -0.000855327468230694
+      ],
+      "type": "VEC2"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "cgmonkey (https://sketchfab.com/cgmonkey)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/loomis-head-planes-essential-form-bfab6627f7104d69a58b9b211ba5943f",
+      "title": "Loomis Head - Planes & essential form"
+    },
+    "generator": "Sketchfab-12.66.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 0,
+      "byteLength": 3108
+    }
+  ],
+  "buffers": [
+    {
+      "name": "head",
+      "byteLength": 3112,
+      "uri": "data:application/octet-stream;base64,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"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Material",
+      "pbrMetallicRoughness": {
+        "metallicFactor": 0,
+        "roughnessFactor": 0.6,
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 0,
+          "material": 0,
+          "mode": 4,
+          "extensions": {
+            "KHR_draco_mesh_compression": {
+              "bufferView": 0,
+              "attributes": {
+                "NORMAL": 0,
+                "POSITION": 1,
+                "TEXCOORD_0": 2
+              }
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.220446049250313e-16,
+        -1,
+        0,
+        0,
+        1,
+        2.220446049250313e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "4d7f9398a74a4967889e2addf0116730.obj.cleaner.materialmerger.gles"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_2"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "extensionsUsed": [
+    "KHR_draco_mesh_compression"
+  ]
+}

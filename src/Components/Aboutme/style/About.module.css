@@ -1,0 +1,141 @@
+.aboutMain {
+  padding: 2rem 0;
+}
+
+.tags {
+  display: block;
+  margin: 5px 5px 5px 0;
+  color: #808080;
+  font-size: 16px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.letterAnimation {
+  display: inline-block;
+  min-width: 15px;
+  font-size: 6rem;
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+  cursor: default;
+}
+
+.letterAnimation:hover {
+  -webkit-animation: letter 1s ease-in-out infinite;
+          animation: letter 1s ease-in-out infinite;
+  color: #8BDB81 !important;
+}
+
+@-webkit-keyframes letter {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  75% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes letter {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  25% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  75% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.nameLetter {
+  display: inline-block;
+  min-width: 10px;
+  font-size: 6rem;
+  color: #8BDB81;
+  font-family: "Fredoka One", cursive;
+  cursor: default;
+}
+
+.nameLetter:hover {
+  -webkit-animation: letter 1s ease-in-out infinite;
+          animation: letter 1s ease-in-out infinite;
+  color: #8A39E1 !important;
+}
+
+.aboutMeWrapper {
+  padding-left: 20px;
+  height: 100%;
+}
+
+.aboutMeDescription {
+  color: #fff;
+  margin: 1rem 0;
+}
+
+.aboutMeTitle {
+  color: #8BDB81;
+  font-size: 20px;
+  font-family: "Fredoka One", cursive;
+  letter-spacing: 1px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.aboutMeTitle:hover {
+  color: #8A39E1;
+}
+
+.attention {
+  color: #8BDB81;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.attention:hover {
+  border-bottom: 1px solid #8BDB81;
+  color: #8A39E1 !important;
+}
+
+@media screen and (max-width: 289.9px) {
+  .letterAnimation {
+    font-size: 4rem !important;
+  }
+  .nameLetter {
+    font-size: 4rem !important;
+  }
+}
+
+@media screen and (width: 1024px) {
+  .letterAnimation {
+    font-size: 4rem !important;
+  }
+  .nameLetter {
+    font-size: 4rem !important;
+  }
+}
+/*# sourceMappingURL=About.module.css.map */

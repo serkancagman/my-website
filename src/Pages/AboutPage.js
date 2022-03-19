@@ -1,7 +1,6 @@
-import { Header, SocialBar, Banner, Loader } from "../Components";
 import React from "react";
-
-const Home = () => {
+import { About, Header, SocialBar, Loader } from "../Components";
+const AboutPage = () => {
   const [isLoading, setIsLoading] = React.useState(true);
   React.useEffect(() => {
     setTimeout(() => {
@@ -13,9 +12,9 @@ const Home = () => {
       {isLoading && <Loader />}
       <Header />
       <SocialBar />
-      <Banner />
+      <About />
     </>
   );
 };
 
-export default Home;
+export default AboutPage;

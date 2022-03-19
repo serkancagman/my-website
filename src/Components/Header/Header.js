@@ -10,7 +10,7 @@ const Header = () => {
         <nav className="navbar-expand-md navbar">
           <Link to="/" className={style.navLogo}>
             <div className={style.logoInner}>
-              <img width={50} className={style.logoImg} src={Logo} alt="logo" />{" "}
+              <img className={style.logoImg} src={Logo} alt="logo" />{" "}
               <span className={style.logoTitle}>Serkan</span>
             </div>
           </Link>
@@ -18,15 +18,15 @@ const Header = () => {
                 <FaHamburger className={style.hamburgerIcon} />
             </button>
           <div id="navContent" className="navbar-collapse collapse">
-            <ul className="navbar-nav ms-auto">
+            <ul className={`navbar-nav ms-auto ${style.navbarNav}`}>
               <li className="nav-item">
                 <NavLink to="/" className={style.navLink}>
                   .home()
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/about" className={style.navLink}>
-                  .whoami()
+                <NavLink to="/aboutme" className={style.navLink}>
+                  .aboutme()
                 </NavLink>
               </li>
               <li className="nav-item">

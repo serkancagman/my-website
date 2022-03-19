@@ -1,5 +1,4 @@
 import React from "react";
-
 export const ScreenWidthContext = React.createContext();
 
 export const ScreenWidthProvider = ({ children }) => {

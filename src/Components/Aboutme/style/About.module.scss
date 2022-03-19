@@ -1,0 +1,79 @@
+@import "../../SCSS/mixins.scss";
+@import "../../SCSS/variables.scss";
+
+.aboutMain {
+  padding: 2rem 0;
+}
+.tags {
+  @include tags;
+}
+
+.letterAnimation {
+  display: inline-block;
+  min-width: 15px;
+  font-size: 6rem;
+  color: #fff;
+  font-family: "Fredoka One", cursive;
+  cursor: default;
+  &:hover {
+    animation: letter 1s ease-in-out infinite;
+    color: $green !important;
+  }
+}
+@include letterAnimation;
+.nameLetter {
+  display: inline-block;
+  min-width: 10px;
+  font-size: 6rem;
+  color: $green;
+  font-family: "Fredoka One", cursive;
+  cursor: default;
+  &:hover {
+    animation: letter 1s ease-in-out infinite;
+    color: $purple !important;
+  }
+}
+.aboutMeWrapper {
+  @include wrappers;
+}
+.aboutMeDescription {
+  color: #fff;
+  margin: 1rem 0;
+}
+.aboutMeTitle {
+  color: $green;
+  font-size: 20px;
+  font-family: "Fredoka One", cursive;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $purple;
+  }
+}
+.attention {
+  color: $green;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    border-bottom: 1px solid $green;
+    color: $purple !important;
+  }
+}
+
+@media screen and (max-width:289.90px){
+  .letterAnimation{
+    font-size: 4rem !important;
+  }
+  .nameLetter{
+    font-size: 4rem !important;
+  }
+}
+@media screen and (width:1024px){
+  .letterAnimation{
+    font-size: 4rem !important;
+  }
+  .nameLetter{
+    font-size: 4rem !important;
+  }
+}

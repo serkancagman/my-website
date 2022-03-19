@@ -52,7 +52,7 @@ const Contact = () => {
               </p>
 
               <span className={style.tags}>{bodyTags.form}</span>
-              
+
               <form onSubmit={handleSubmit} className="p-1">
                 <div className="row justify-content-center align-items-center g-3">
                   <div className="col-md-6">
@@ -108,28 +108,26 @@ const Contact = () => {
                 </div>
                 <span className={style.tags}>{bodyTags.formClose}</span>
                 <div className={style.contactButtonWrapper}>
-                <div className={style.contactButton}>
-                  <button
-                    type="submit"
-                    onClick={handleSubmit}
-                    className={style.sendButton}
-                  >
-                    Send
-                  </button>
+                  <div className={style.contactButton}>
+                    <button
+                      type="submit"
+                      onClick={handleSubmit}
+                      className={style.sendButton}
+                    >
+                      Send
+                    </button>
                   </div>
                   <div className="d-flex mt-1 align-items-center">
-                <HiOutlineMailOpen className={style.mailIcon} />
-                <button
-                  onClick={() =>
-                    (window.location = "mailto:serkancagmann@gmail.com")
-                  }
-                  className={style.email}
-                >
-                  serkancagmann@gmail.com
-                </button>
-                </div>
-                
-             
+                    <HiOutlineMailOpen className={style.mailIcon} />
+                    <button
+                      onClick={() =>
+                        (window.location = "mailto:serkancagmann@gmail.com")
+                      }
+                      className={style.email}
+                    >
+                      serkancagmann@gmail.com
+                    </button>
+                  </div>
                 </div>
               </form>
             </div>
@@ -138,6 +136,7 @@ const Contact = () => {
             <ContactCanvas />
           </div>
         </div>
+        <span className={style.tags}>{bodyTags.bodyClose}</span>
       </div>
       {isMessage && (
         <div className={style.messageSuccess}>Message sent successfully!</div>

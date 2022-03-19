@@ -8,7 +8,6 @@ import gitImg from "../../assets/git.png";
 import htmlImg from "../../assets/html.png";
 import cssImg from "../../assets/css.png";
 import bootstrapImg from "../../assets/bootstrap.png";
-import cursor from "../../assets/cursor.png";
 import { bodyTags } from "../../Helpers/HelperItems";
 import { ScreenWidthContext } from "../../Context/ScreenWidthContext";
 
@@ -20,7 +19,6 @@ const Skills = () => {
     height: "150px",
     margin: "20px",
   });
- 
 
   React.useEffect(() => {
     if (windowDimensions.width > 300 && windowDimensions.width < 900) {
@@ -130,11 +128,7 @@ const Skills = () => {
               </div>
             </div>
             <div className="col-md-6 col-lg-6">
-              <div
-                
-                className={style.canvasWrapper}
-              >
-               
+              <div className={style.canvasWrapper}>
                 <div className={style.canvasUp}>
                   <BoxCanvas canvasWidth={boxWidth} image={reactImg} />
                   <BoxCanvas canvasWidth={boxWidth} image={jsImg} />

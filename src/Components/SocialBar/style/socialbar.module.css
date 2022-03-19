@@ -1,8 +1,10 @@
 .asideMenu {
   position: fixed;
-  top: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 0;
-  height: 100%;
+  display: inline;
   z-index: 1;
 }
 
@@ -40,5 +42,18 @@
   color: #8BDB81 !important;
   -webkit-transform: rotate(90deg) !important;
           transform: rotate(90deg) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .asideMenu {
+    right: 0;
+    left: unset;
+    top: 100%;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  .socialIcon {
+    font-size: 40px !important;
+  }
 }
 /*# sourceMappingURL=socialbar.module.css.map */
