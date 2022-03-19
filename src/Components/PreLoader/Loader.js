@@ -1,5 +1,3 @@
-import Lottie from "lottie-react";
-import animation from "../../assets/loading.json";
 import React from "react";
 import logo from "../../assets/logo.png";
 const Loader = () => {

@@ -7,7 +7,7 @@ import ContactCanvas from "./ContactCanvas";
 import { HiOutlineMailOpen } from "react-icons/hi";
 const Contact = () => {
   const [isMessage, setIsMessage] = React.useState(false);
-  const { handleSubmit, handleChange, values, errors, handleBlur, touched } =
+  const { handleSubmit, handleChange, errors, handleBlur, touched } =
     useFormik({
       initialValues: {
         name: "",

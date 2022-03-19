@@ -6,7 +6,7 @@ import { useGLTF } from '@react-three/drei'
 export default function Model({ ...props }) {
   const mouse = useLerpedMouse();
   const group = useRef()
-  const { nodes, materials } = useGLTF('/computer.gltf')
+  const { nodes} = useGLTF('/computer.gltf')
   useFrame((state) => {
     group.current.rotation.y = (mouse.current.x * Math.PI) / 10;
     group.current.rotation.x = (mouse.current.y * Math.PI) / 10;

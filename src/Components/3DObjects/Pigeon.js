@@ -1,13 +1,13 @@
 import { useLerpedMouse } from "../../hooks/useMouse";
 import React, { useRef } from "react";
-import { useGLTF, useAnimations } from "@react-three/drei";
+import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 
 export default function Model({ ...props }) {
   const mouse = useLerpedMouse();
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/pigeon.gltf");
-  const { actions } = useAnimations(animations, group);
+  const { nodes, materials} = useGLTF("/pigeon.gltf");
+  
   useFrame((state) => {
     group.current.rotation.y = (mouse.current.x * Math.PI) / 10;
     group.current.rotation.x = (mouse.current.y * Math.PI) / 10;

@@ -7,14 +7,12 @@ import htmlIcon from "../assets/htmlicon.png";
 import cssIcon from "../assets/cssicon.png";
 import sassIcon from "../assets/sassicon.png";
 import reactIcon from "../assets/reacticon.png";
-import jsIcon from "../assets/jsicon.png";
 import nodeIcon from "../assets/nodeicon.png";
 import mongoIcon from "../assets/mongoicon.png";
 import bootstrapIcon from "../assets/bootstrapicon.png";
 import ecommerce from "../assets/ecommerce.png";
 import eshop1 from "../assets/project1A.png";
 import eshop2 from "../assets/project1B.png";
-import eshop3 from "../assets/project1C.png";
 import eshop4 from "../assets/project1D.png";
 import eshop5 from "../assets/project1E.jpg";
 // CRYPTO ASSETS
