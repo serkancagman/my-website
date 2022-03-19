@@ -139,4 +139,10 @@
     font-size: 4rem !important;
   }
 }
+
+@media screen and (max-width: 540px) {
+  .aboutMeWrapper {
+    padding: 0 !important;
+  }
+}
 /*# sourceMappingURL=About.module.css.map */
