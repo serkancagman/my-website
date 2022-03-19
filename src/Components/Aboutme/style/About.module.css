@@ -94,6 +94,7 @@
 .aboutMeDescription {
   color: #fff;
   margin: 1rem 0;
+  text-align: justify;
 }
 
 .aboutMeTitle {
