@@ -56,7 +56,7 @@ export const bannerLetters = [
   "n",
   ",",
   "br",
-  "a",
+  "an",
   " ",
   "I",
   "s",
