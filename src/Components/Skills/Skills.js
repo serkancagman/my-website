@@ -1,13 +1,13 @@
 import React from "react";
 import BoxCanvas from "../BoxCanvas/BoxCanvas";
 import style from "./style/skills.module.css";
-import reactImg from "../../assets/react.png";
-import jsImg from "../../assets/JavaScript.png";
-import sassImg from "../../assets/sass.png";
-import gitImg from "../../assets/git.png";
-import htmlImg from "../../assets/html.png";
-import cssImg from "../../assets/css.png";
-import bootstrapImg from "../../assets/bootstrap.png";
+import reactImg from "../../assets/SkillBox/react.png";
+import jsImg from "../../assets/SkillBox/JavaScript.png";
+import sassImg from "../../assets/SkillBox/sass.png";
+import gitImg from "../../assets/SkillBox/git.png";
+import htmlImg from "../../assets/SkillBox/html.png";
+import cssImg from "../../assets/SkillBox/css.png";
+import bootstrapImg from "../../assets/SkillBox/bootstrap.png";
 import { bodyTags } from "../../Helpers/HelperItems";
 import { ScreenWidthContext } from "../../Context/ScreenWidthContext";
 
@@ -51,19 +51,34 @@ const Skills = () => {
             <div className="col-md-6 col-lg-6">
               <span className={`ms-3 ${style.tags}`}> {bodyTags.h1}</span>
               <h1 className={style.skillsTitle}>
-                <span className={style.letterAnimation}>S</span>
-                <span className={style.letterAnimation}>k</span>
-                <span className={style.letterAnimation}>i</span>
-                <span className={style.letterAnimation}>l</span>
-                <span className={style.letterAnimation}>l</span>
-                <span className={style.letterAnimation}>s</span>
+                <span translate="no" className={style.letterAnimation}>
+                  S
+                </span>
+                <span translate="no" className={style.letterAnimation}>
+                  k
+                </span>
+                <span translate="no" className={style.letterAnimation}>
+                  i
+                </span>
+                <span translate="no" className={style.letterAnimation}>
+                  l
+                </span>
+                <span translate="no" className={style.letterAnimation}>
+                  l
+                </span>
+                <span translate="no" className={style.letterAnimation}>
+                  s
+                </span>
               </h1>
               <span className={`ms-3 ${style.tags}`}> {bodyTags.h1Close}</span>
               <div className={style.skillsBars}>
                 <div className={style.skillsBar}>
                   <h6 className={style.skillsBarTitle}>
                     React{" "}
-                    <span className={style.skillSubTitle}> - Learning</span>{" "}
+                    <span translate="no" className={style.skillSubTitle}>
+                      {" "}
+                      - Learning
+                    </span>{" "}
                   </h6>
                   <div className={style.skillsBarProgress}>
                     <div className={style.skillsBarProgressReact}></div>
@@ -72,9 +87,12 @@ const Skills = () => {
               </div>
               <div className={style.skillsBars}>
                 <div className={style.skillsBar}>
-                  <h6 className={style.skillsBarTitle}>
+                  <h6 translate="no" className={style.skillsBarTitle}>
                     Javascript{" "}
-                    <span className={style.skillSubTitle}> - Learning</span>{" "}
+                    <span translate="no" className={style.skillSubTitle}>
+                      {" "}
+                      - Learning
+                    </span>{" "}
                   </h6>
                   <div className={style.skillsBarProgress}>
                     <div className={style.skillsBarProgressJavascript}></div>
@@ -83,7 +101,9 @@ const Skills = () => {
               </div>
               <div className={style.skillsBars}>
                 <div className={style.skillsBar}>
-                  <h6 className={style.skillsBarTitle}>HTML 5</h6>
+                  <h6 translate="no" className={style.skillsBarTitle}>
+                    HTML 5
+                  </h6>
                   <div className={style.skillsBarProgress}>
                     <div className={style.skillsBarProgressHTML}></div>
                   </div>
@@ -91,9 +111,12 @@ const Skills = () => {
               </div>
               <div className={style.skillsBars}>
                 <div className={style.skillsBar}>
-                  <h6 className={style.skillsBarTitle}>
+                  <h6 translate="no" className={style.skillsBarTitle}>
                     SASS{" "}
-                    <span className={style.skillSubTitle}> - Learning</span>{" "}
+                    <span translate="no" className={style.skillSubTitle}>
+                      {" "}
+                      - Learning
+                    </span>{" "}
                   </h6>
                   <div className={style.skillsBarProgress}>
                     <div className={style.skillsBarProgressSass}></div>
@@ -102,7 +125,9 @@ const Skills = () => {
               </div>
               <div className={style.skillsBars}>
                 <div className={style.skillsBar}>
-                  <h6 className={style.skillsBarTitle}>CSS 3</h6>
+                  <h6 translate="no" className={style.skillsBarTitle}>
+                    CSS 3
+                  </h6>
                   <div className={style.skillsBarProgress}>
                     <div className={style.skillsBarProgressCSS}></div>
                   </div>
@@ -110,7 +135,9 @@ const Skills = () => {
               </div>
               <div className={style.skillsBars}>
                 <div className={style.skillsBar}>
-                  <h6 className={style.skillsBarTitle}>BOOTSTRAP 5</h6>
+                  <h6 translate="no" className={style.skillsBarTitle}>
+                    BOOTSTRAP 5
+                  </h6>
                   <div className={style.skillsBarProgress}>
                     <div className={style.skillsBarProgressBootstrap}></div>
                   </div>
@@ -118,8 +145,12 @@ const Skills = () => {
               </div>
               <div className={style.skillsBars}>
                 <div className={style.skillsBar}>
-                  <h6 className={style.skillsBarTitle}>
-                    GIT <span className={style.skillSubTitle}> - Learning</span>
+                  <h6 translate="no" className={style.skillsBarTitle}>
+                    GIT{" "}
+                    <span translate="no" className={style.skillSubTitle}>
+                      {" "}
+                      - Learning
+                    </span>
                   </h6>
                   <div className={style.skillsBarProgress}>
                     <div className={style.skillsBarProgressGit}></div>

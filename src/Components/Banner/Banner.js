@@ -41,13 +41,13 @@ const Banner = () => {
                     return <br key={index} />;
                   } else if (7 < index && index <= 14) {
                     return (
-                      <span key={index} className={style.nameLetter}>
+                      <span translate="no" key={index} className={style.nameLetter}>
                         {letter}
                       </span>
                     );
                   }
                   return (
-                    <span key={index} className={style.letterAnimation}>
+                    <span key={index} translate="no" className={style.letterAnimation}>
                       {letter}
                     </span>
                   );
@@ -56,7 +56,7 @@ const Banner = () => {
               <span className={`ms-2 ${style.tags}`}>{bodyTags.h1Close}</span>
               <div className={style.bannerBtnWrapper}>
                 <Link to="/aboutme">
-                  <button className={style.bannerButton}>Discover Me ! </button>
+                  <button translate="no" className={style.bannerButton}>Discover Me ! </button>
                 </Link>
               </div>
             </div>

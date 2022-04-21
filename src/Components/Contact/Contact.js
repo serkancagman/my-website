@@ -46,7 +46,7 @@ const Contact = () => {
               </h1>
               <span className={style.tags}>{bodyTags.h1Close}</span>
 
-              <p className={style.contactText}>
+              <p translate="no" className={style.contactText}>
                 If you like my works and you think you have a good idea to work
                 with me, contact me without waiting any longer!
               </p>
@@ -139,7 +139,7 @@ const Contact = () => {
         <span className={style.tags}>{bodyTags.bodyClose}</span>
       </div>
       {isMessage && (
-        <div className={style.messageSuccess}>Message sent successfully!</div>
+        <div translate="no" className={style.messageSuccess}>Message sent successfully!</div>
       )}
     </section>
   );
