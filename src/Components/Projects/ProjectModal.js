@@ -3,6 +3,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
+import style from "./style/projects.module.css";
 import {
   Modal,
   ModalOverlay,
@@ -11,6 +12,7 @@ import {
   ModalBody,
   ModalCloseButton,
 } from "@chakra-ui/react";
+import { FaGithubAlt } from "react-icons/fa";
 const ProjectModal = ({ data, isOpen, onClose }) => {
   return (
     <Modal
@@ -34,6 +36,27 @@ const ProjectModal = ({ data, isOpen, onClose }) => {
           >
             {data &&
               data.projectImages.map((item, index) => {
+                if (index === 0) {
+                  return (
+                    <SwiperSlide key={index}>
+                      {" "}
+                      <div className={`d-flex justify-content-center align-items-start position-relative flex-column`}>
+                      <img className="img-fluid" src={item} alt="project" />
+                      <div className={`d-flex ${style.project_info}  align-items-center `}>
+                        <a
+                          href={data.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <FaGithubAlt className="fs-3" />
+                        </a>
+                      </div>
+                      </div>
+                  
+                    </SwiperSlide>
+                  );
+                }
+
                 return (
                   <SwiperSlide key={index}>
                     {" "}

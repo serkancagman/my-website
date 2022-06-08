@@ -76,6 +76,12 @@
     }
   }
 }
+
+.project_info{
+  z-index: 9;
+  position: absolute;
+  bottom: 15%;
+}
 .eyeIcon {
   transition: all 0.2s ease-in-out;
   font-size: 50px;

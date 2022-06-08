@@ -44,6 +44,21 @@ import pizza1 from "../assets/PizzaStopAssets/mockup.png";
 import pizza2 from "../assets/PizzaStopAssets/pic1.jpg";
 import pizza3 from "../assets/PizzaStopAssets/pic2.jpg";
 import pizza4 from "../assets/PizzaStopAssets/pic3.jpg";
+// CRYPTOZEN ASSETS
+import cryptozen from "../assets/cryptozenAssets/cryptozen.jpg";
+import cryptozen1 from "../assets/cryptozenAssets/mockup.png";
+import cryptozen2 from "../assets/cryptozenAssets/pic1.png";
+import cryptozen3 from "../assets/cryptozenAssets/pic2.png";
+import cryptozen4 from "../assets/cryptozenAssets/pic3.png";
+
+// ESTATE ASSETS
+import estate from "../assets/estateAssets/estate.jpg";
+import estate1 from "../assets/estateAssets/mockup.png";
+import estate2 from "../assets/estateAssets/pic1.png";
+import estate3 from "../assets/estateAssets/pic2.png";
+import estate4 from "../assets/estateAssets/pic3.png";
+import estate5 from "../assets/estateAssets/pic4.png";
+import estate6 from "../assets/estateAssets/pic5.png";
 export const bannerLetters = [
   "H",
   "i",
@@ -115,11 +130,32 @@ export const bodyTags = {
 
 export const projects = [
   {
+    id: 7,
+    title: "Cryptozen",
+    description: "Cryptozen is a web application that allows users to track their crypto currencies.",
+    img: cryptozen,
+    link: "https://cryptozen.netlify.app/",
+    github: "https://github.com/serkancagman/cryptozen",
+    tags:[reactIcon, bootstrapIcon,sassIcon],
+    projectImages: [  cryptozen1, cryptozen2, cryptozen3, cryptozen4 ],
+  },
+  {
+    id: 8,
+    title: "Estate NextJS",
+    description: "Estate NextJS is a web application that allows users to find properties.",
+    img: estate,
+    link: "https://estate-nextjs.netlify.app/",
+    github: "https://github.com/serkancagman/estate-app",
+    tags:[reactIcon, bootstrapIcon,sassIcon,nodeIcon,mongoIcon],
+    projectImages: [ estate1, estate2, estate3, estate4, estate5, estate6 ],
+  },
+  {
     id: 1,
     title: "E-commerce",
     description: "E-commerce website",
     img: eshop,
     link: " ",
+    github: "https://github.com/serkancagman/E-Commerce-Project",
     tags: [reactIcon, htmlIcon, sassIcon, bootstrapIcon, nodeIcon, mongoIcon],
     projectImages: [ecommerce, eshop1, eshop2, eshop4, eshop5],
   },
@@ -129,6 +165,7 @@ export const projects = [
     description: "Pizza Stop",
     img: pizzaStop,
     link: " ",
+    github: "https://github.com/serkancagman/Best-Pizza-React",
     tags: [reactIcon, htmlIcon, sassIcon, bootstrapIcon, nodeIcon, mongoIcon],
     projectImages: [pizza1, pizza2, pizza3, pizza4],
   },
@@ -139,6 +176,7 @@ export const projects = [
     description: "Admin Dashboard Panel",
     img: admin,
     link: " ",
+    github: "https://github.com/serkancagman/E-Commerce-Project",
     tags: [reactIcon, htmlIcon, sassIcon, bootstrapIcon],
     projectImages: [admin1, admin2, admin3, admin4, admin5],
   },
@@ -166,6 +204,7 @@ export const projects = [
     description: "Bitcoin Currency",
     img: crypto,
     link: " ",
+    github:"https://github.com/serkancagman/Bitcoin-currency-front-end-project-react",
     tags: [reactIcon, htmlIcon, sassIcon, bootstrapIcon],
     projectImages: [crypto1, crypto2, crypto3, crypto4, crypto5],
   },
